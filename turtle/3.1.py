@@ -2,6 +2,7 @@
 import turtle
 import math
 
+
 # Square drawing function
 def fibonacci_plotting(iteration_number):
     a = 0
@@ -21,7 +22,7 @@ def fibonacci_plotting(iteration_number):
     the_pen.lt(90)
     the_pen.fd(b * factor)
 
-# Fibonacci application for the rest of the squares
+    # Fibonacci application for the rest of the squares
     temporary_length = square_two
     square_two = square_two + square_one
     square_one = temporary_length
@@ -41,7 +42,7 @@ def fibonacci_plotting(iteration_number):
         square_two = square_two + square_one
         square_one = temporary_length
 
-    # After drawing all the squares we set the pen for drawing the 
+    # After drawing all the squares we set the pen for drawing the
     # spiral line
     the_pen.penup()
     # Bring it back to the origin
@@ -66,9 +67,10 @@ def fibonacci_plotting(iteration_number):
         a = b
         b = temporary_length + b
 
+
 factor = 1
 
-# Asking the user the desired number of iteration 
+# Asking the user the desired number of iteration
 iteration_number = int(input("Enter the number of iterations, (must be > 1): "))
 if iteration_number > 0:
     print(f"Fibonacci series for {iteration_number} elements: ")
@@ -80,4 +82,4 @@ else:
     # Since it is not possible to have a zero in Fibonacci theory, this
     #  error message will display
     print("Number of iterations must be > 0")
-
+    
