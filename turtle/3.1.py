@@ -22,7 +22,7 @@ def fibonacci_plotting(iteration_number):
     the_pen.lt(90)
     the_pen.fd(b * factor)
 
-    # Fibonacci application for the rest of the squares
+    # Fibonacci application for the others squares
     temporary_length = square_two
     square_two = square_two + square_one
     square_one = temporary_length
