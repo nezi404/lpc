@@ -1,5 +1,6 @@
-# Importing turtle for the visual output
+# Importing for the visual output
 from turtle import *
+
 
 # Changing the speed of the turtle
 speed("fastest")
@@ -33,7 +34,6 @@ def branch_plotting(branch_size, branch_number):
         pencolor(0, 255//branch_number, 0)
         rt(angle)
         fd(-branch_size)
-
 
 # Asking the desired values to the user
 values = input("How much big and how many levels? ")
