@@ -36,7 +36,7 @@ def branch_plotting(branch_size, branch_number):
         fd(-branch_size)
 
 # Asking the desired values to the user
-values = input("How much big and how many levels? ")
+values = input("How much big and how many levels? Write number space number")
 branch_size, branch_number = values.split()
 branch_size = int(branch_size)
 branch_number = int(branch_number)
