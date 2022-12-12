@@ -1,10 +1,10 @@
 import turtle
 
+
 # Function for showing the screen
 display = turtle.Screen()
 # Creating the "pen" for the triangles drawings
 the_pen = turtle.Turtle()
-
 
 # Function that draws the triangles
 def draw_triangle(coordinate_x, coordinate_y):
@@ -23,7 +23,6 @@ def draw_triangle(coordinate_x, coordinate_y):
         the_pen.lt(120)
         # Drawing the half of the triangle's side
         the_pen.fd(100)
-
 
 # Built-in function that reads where is/was the cursor
 # click on the window
