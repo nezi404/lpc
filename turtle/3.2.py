@@ -1,11 +1,10 @@
 # Importing turtle for the visual output
 from turtle import *
 
+# Changing the speed of the turtle
 speed("fastest")
-
 # Changing the direction of the turtle to go upwards
 rt(-90)
-
 # The angle between the main branch and the others
 angle = 30
 
@@ -25,7 +24,7 @@ def branch_plotting(branch_size, branch_number):
         fd(branch_size)
         # Marking the next curvy
         rt(angle)
-        # Making the next shorter and showing how many still lasts
+        # Making the next shorter and how many still lasts
         branch_plotting(0.8 * branch_size, branch_number - 1)
         pencolor(0, 255//branch_number, 0)
         # Changing the angle of the turtle for a new branch
