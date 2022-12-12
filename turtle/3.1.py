@@ -9,10 +9,8 @@ def fibonacci_plotting(iteration_number):
     b = 1
     square_one = a
     square_two = b
-
     # Turning the pen for squares blue
     the_pen.pencolor("blue")
-
     # Drawing the first square of 1 x 1
     the_pen.fd(b * factor)
     the_pen.lt(90)
@@ -21,7 +19,6 @@ def fibonacci_plotting(iteration_number):
     the_pen.fd(b * factor)
     the_pen.lt(90)
     the_pen.fd(b * factor)
-
     # Fibonacci application for the others squares
     temporary_length = square_two
     square_two = square_two + square_one
@@ -36,7 +33,6 @@ def fibonacci_plotting(iteration_number):
         the_pen.fd(square_two * factor)
         the_pen.lt(90)
         the_pen.fd(square_two * factor)
-
         # Fibonacci theory for the rest of the squares(continuation)
         temporary_length = square_two
         square_two = square_two + square_one
@@ -56,6 +52,7 @@ def fibonacci_plotting(iteration_number):
 
     # Drawing the Fibonacci spiral plotting
     the_pen.lt(90)
+    
     for i in range(iteration_number):
         print(b)
         spiral = math.pi * b * factor/2
@@ -69,15 +66,16 @@ def fibonacci_plotting(iteration_number):
 
 
 factor = 1
-
 # Asking the user the desired number of iteration
 iteration_number = int(input("Enter the number of iterations, (must be > 1): "))
+
 if iteration_number > 0:
     print(f"Fibonacci series for {iteration_number} elements: ")
     the_pen = turtle.Turtle()
     the_pen.speed(100)
     fibonacci_plotting(iteration_number)
     turtle.done()
+    
 else:
     # Since it is not possible to have a zero in Fibonacci theory, this
     #  error message will display
